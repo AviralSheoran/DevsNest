@@ -27,3 +27,28 @@ console.log(first([], 3));
 console.log(first([7, 9, 0, -2], 3));
 console.log(first([7, 9, 0, -2], 6));
 console.log(first([7, 9, 0, -2], -3));
+
+// !Write a simple JavaScript program to join all elements of the following array into a string.
+
+myColor = ["Red", "Green", "White", "Black"];
+console.log(myColor.join(","));
+
+// !Write a JavaScript program to find the most frequent item of an array:
+
+var arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+var count = 0;
+var max = 0;
+var ans;
+for (var i = 0; i < arr1.length; i++) {
+  for (var j = 0; j < arr1.length; j++) {
+    if (arr1[i] == arr1[j]) {
+      count += 1;
+      if (c > max) {
+        max = c;
+        ans = arr1[i];
+      }
+    }
+  }
+  count = 0;
+}
+console.log(ans + " is occuring (" + max + " times)");
