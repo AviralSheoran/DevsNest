@@ -1,12 +1,9 @@
-const server = {
-  serverName: "devsnest",
-};
+const box = document.querySelector(".box");
 
-const server2 = {
-  serverName: "The developer community",
-};
-function getInvite(a, b) {
-  console.log(this);
-  console.log(a + b);
-}
-getInvite.call(server2, 2, 4);
+box.addEventListener("click", () => {
+  if (box.classList.contains("boxClicked")) {
+    box.classList.remove("boxClicked");
+  } else {
+    box.classList.add("boxClicked");
+  }
+});
